@@ -22,3 +22,12 @@
     height: 40px;
     margin: 30px 0 0 200px;
 }
+.menu_link{
+    text-decoration: none;
+    color: #fff;
+}
+.menu_link:hover{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+}
