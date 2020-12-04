@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+html{
+    background-color: #ffffff;
+    /* box-sizing: border-box; */
+    /* max-width: 1280px; */
+}
 .header{
     width: 100%;
     height: 100px;
@@ -10,7 +15,7 @@
     height: 80px;
     margin-top: 10px;
 }
-.menu{
+.menu_area{
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -30,4 +35,11 @@
     text-decoration: none;
     color: #fff;
     opacity: 0.5;
+}
+.cover_area{
+    position: relative;
+    width: 100vw;
+}
+.img_cover{
+    width: 100vw;
 }
