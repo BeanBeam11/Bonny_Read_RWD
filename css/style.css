@@ -36,6 +36,9 @@ html{
     color: #fff;
     opacity: 0.5;
 }
+.menu_icon{
+    height: 35px;
+}
 .cover_area{
     position: relative;
     width: 100%;
