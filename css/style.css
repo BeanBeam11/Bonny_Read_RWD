@@ -36,8 +36,38 @@ html{
     color: #fff;
     opacity: 0.5;
 }
+.menu_icon_area{
+    position: absolute;
+    width: 480px;
+    height: 45px;
+    margin-top: 28px;
+    right: 0;
+}
 .menu_icon{
+    position: absolute;
     height: 35px;
+}
+.box_search{
+    position: absolute;
+    width: 225px;
+    height: 35px;
+    margin-top: 2px;
+    outline: 2px solid white;
+    left: 0;
+}
+.icon_search{
+    position: absolute;
+    left: 5px;
+    height: 28px;
+    margin-top: 5px;
+}
+.icon_user{
+    position: absolute;
+    right: 170px;
+}
+.icon_shop{
+    position: absolute;
+    right: 100px;
 }
 .cover_area{
     position: relative;
@@ -67,7 +97,7 @@ html{
 }
 .cover_contain{
     margin-top: 10px;
-    text-shadow: 0.05em 0.08em 0.1em #c7c7c7;
+    text-shadow: 0.04em 0.06em 0.08em #4f4f4f;
 }
 .box_view_more{
     margin-top: 20px;
@@ -113,6 +143,7 @@ html{
 }
 .col_1{
     width: 25%;
+    /* text-align: center; */
 }
 .col_2{
     width: 50%;
