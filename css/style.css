@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 html{
     background-color: #ffffff;
+    font-size: 16px;
     /* box-sizing: border-box; */
     /* max-width: 1280px; */
 }
+/* header */
 .header{
     width: 100%;
     height: 100px;
@@ -15,12 +17,18 @@ html{
     height: 80px;
     margin-top: 10px;
 }
+.img_logo_M{
+    display: none;
+}
+.nav_menu{
+    display: none;
+}
 .menu_area{
     position: absolute;
     display: flex;
     justify-content: space-between;
     font-family: 'Dosis', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 300;
     color: #fff;
     width: 370px;
@@ -61,6 +69,9 @@ html{
     height: 28px;
     margin-top: 5px;
 }
+.icon_search_M{
+    display: none;
+}
 .icon_user{
     position: absolute;
     right: 170px;
@@ -69,6 +80,7 @@ html{
     position: absolute;
     right: 100px;
 }
+/* cover area */
 .cover_area{
     position: relative;
     width: 100%;
@@ -85,10 +97,11 @@ html{
     margin-left: 150px;
     margin-top: 70px;
     font-family: 'Dosis', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .cover_header{
-    font-size: 48px;
+    font-size: 3rem;
+    text-shadow: 0.04em 0.06em 0.08em #4f4f4f;
 }
 .cover_line{
     width: 100px;
@@ -109,11 +122,12 @@ html{
     border-radius: 3px 3px 3px 3px;
     font-weight: 200;
 }
+/* product area */
 .trending{
     height: 70px;
     text-align: center;
     font-family: 'Dosis', sans-serif;
-    font-size: 64px;
+    font-size: 4rem;
     margin-top: 60px;
 }
 .product_line{
@@ -135,15 +149,15 @@ html{
     width: 295px;
     text-align: center;
     font-family: 'Dosis', sans-serif;
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-bottom: 30px;
 }
+/* footer area */
 .footer_row{
     margin-top: 30px;
 }
 .col_1{
     width: 25%;
-    /* text-align: center; */
 }
 .col_2{
     width: 50%;
@@ -158,7 +172,7 @@ footer{
     height: 80px;
     background-color: #A0917C;
     font-family: 'Dosis', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
 }
 .icon{
@@ -167,4 +181,101 @@ footer{
 }
 .language{
     margin-left: 15px;
+}
+/* iPad version RWD*/
+@media screen and (max-width: 768px){
+
+}
+/* iPhone version RWD*/
+@media screen and (max-width: 320px){
+    html{
+        font-size: 12px;
+    }
+    /* header */
+    .header{
+        width: 100%;
+        height: 50px;
+        padding: 0 15px;
+    }
+    .img_logo_l{
+        display: none;
+    }
+    .img_logo_M{
+        position: absolute;
+        display: block;
+        height: 30px;
+        margin-top: 10px;
+    }
+    .nav_menu{
+        display: block;
+        position: absolute;
+        height: 30px;
+        right: 0;
+        padding: 0 15px;
+    }
+    .menu_link{
+        display: none;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .menu_click{
+        display: block;
+    }
+    .menu_icon_area{
+        position: absolute;
+        width: 150px;
+        height: 20px;
+        margin-top: 15px;
+        right: 0;
+    }
+    .menu_icon{
+        position: absolute;
+        height: 20px;
+    }
+    .box_search{
+        display: none;
+    }
+    .icon_search_M{
+        display: block;
+        position: absolute;
+        right: 120px;
+        height: 18px;
+    }
+    .icon_user{
+        position: absolute;
+        right: 90px;
+        height: 18px;
+    }
+    .icon_shop{
+        position: absolute;
+        right: 60px;
+    }
+    /* cover area */
+    .cover_word{
+        width: 270px;
+        height: 210px;
+        margin-left: 20px;
+        margin-top: 70px;
+        font-family: 'Dosis', sans-serif;
+        font-size: 1.5rem;
+    }
+    .box_view_more{
+        width: 100px;
+        height: 30px;
+    }
+    /* product area */
+    .container{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .product{
+        width: 130px;
+        margin-bottom: 10px;
+    }
+    .name{
+        width: 130px;
+        font-size: 1.15rem;
+        margin-bottom: 30px;
+    }
 }
