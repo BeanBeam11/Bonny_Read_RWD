@@ -83,10 +83,10 @@ html{
 /* cover area */
 .cover_area{
     position: relative;
-    width: 100%;
     height: 100vh;
     background-image: url(../img/img_cover_1.jpg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .cover_word{
     position: absolute;
@@ -175,6 +175,9 @@ footer{
     margin-top: 30px;
     text-align: right;
 }
+.footer_language_M{
+    display: none;
+}
 .icon{
     width: 30px;
     margin-right: 12px;
@@ -184,7 +187,120 @@ footer{
 }
 /* iPad version RWD*/
 @media screen and (max-width: 768px){
-
+    html{
+        font-size: 16px;
+        max-width: 768px;
+    }
+    /* header */
+    .header{
+        height: 60px;
+        padding: 0 30px;
+    }
+    .img_logo_l{
+        display: none;
+    }
+    .img_logo_M{
+        position: absolute;
+        display: block;
+        height: 38px;
+        margin-top: 10px;
+    }
+    .nav_menu{
+        display: none;
+    }
+    .menu_area{
+        width: 315px;
+        height: 30px;
+        margin-top: 12px;
+    }
+    .menu_icon_area{
+        width: 115px;
+        height: 30px;
+        margin-top: 15px;
+    }
+    .menu_icon{
+        height: 30px;
+    }
+    .box_search{
+        display: none;
+    }
+    .icon_search_M{
+        display: block;
+        position: absolute;
+        right: 135px;
+        height: 28px;
+        margin-top: 1px;
+    }
+    .icon_user{
+        right: 80px;
+    }
+    .icon_shop{
+        right: 30px;
+    }
+    /* cover area */
+    .cover_area{
+        position: relative;
+        height: 35vh;
+        background-image: url(../img/img_cover_1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .cover_word{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 210px;
+        margin-left: 90px;
+        margin-top: 40px;
+        line-height: 1.3;
+    }
+    .cover_header{
+        font-size: 3rem;
+        text-shadow: 0.04em 0.06em 0.08em #4f4f4f;
+    }
+    .cover_line{
+        width: 100px;
+        height: 4px;
+        background-color: #A0917C;
+    }
+    .cover_contain{
+        margin-top: 10px;
+        text-shadow: 0.04em 0.06em 0.08em #4f4f4f;
+    }
+    .box_view_more{
+        margin-top: 20px;
+        width: 150px;
+        height: 45px;
+        text-align: center;
+        color: #fff;
+        background-color: #A0917C;
+        border-radius: 3px 3px 3px 3px;
+        font-weight: 200;
+    }
+    .box_view_more:hover{
+        opacity: 0.5;
+    }
+    /* footer area */
+    footer{
+        height: 130px;
+    }
+    .footer_row{
+        text-align: center;
+    }
+    .footer_icon{
+        margin-top: 30px;
+    }
+    .footer_word{
+        margin-top: 20px;
+    }
+    .footer_language{
+        display: none;
+    }
+    .footer_language_M{
+        display: block;
+        margin-top: 30px;
+    }
 }
 /* iPhone version RWD*/
 @media screen and (max-width: 320px){
@@ -304,6 +420,9 @@ footer{
         margin-bottom: 30px;
     }
     /* footer area */
+    footer{
+        height: 80px;
+    }
     .footer_row{
         height: 80px;
     }
@@ -317,6 +436,9 @@ footer{
         margin-top: 5px;
     }
     .footer_language{
+        display: none;
+    }
+    .footer_language_M{
         display: none;
     }
     .icon{
