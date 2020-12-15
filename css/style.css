@@ -122,6 +122,9 @@ html{
     border-radius: 3px 3px 3px 3px;
     font-weight: 200;
 }
+.box_view_more:hover{
+    opacity: 0.5;
+}
 /* product area */
 .trending{
     height: 70px;
@@ -153,20 +156,6 @@ html{
     margin-bottom: 30px;
 }
 /* footer area */
-.footer_row{
-    margin-top: 30px;
-}
-.col_1{
-    width: 25%;
-}
-.col_2{
-    width: 50%;
-    text-align: center;
-}
-.col_3{
-    width: 25%;
-    text-align: right;
-}
 footer{
     width: 100%;
     height: 80px;
@@ -174,6 +163,17 @@ footer{
     font-family: 'Dosis', sans-serif;
     font-size: 1rem;
     color: #fff;
+}
+.footer_icon{
+    margin-top: 30px;
+}
+.footer_word{
+    margin-top: 30px;
+    text-align: center;
+}
+.footer_language{
+    margin-top: 30px;
+    text-align: right;
 }
 .icon{
     width: 30px;
@@ -190,9 +190,11 @@ footer{
 @media screen and (max-width: 320px){
     html{
         font-size: 12px;
+        max-width: 320px;
     }
     /* header */
     .header{
+        position: relative;
         width: 100%;
         height: 50px;
         padding: 0 15px;
@@ -211,7 +213,11 @@ footer{
         position: absolute;
         height: 30px;
         right: 0;
-        padding: 0 15px;
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    .menu_area{
+        display: none;
     }
     .menu_link{
         display: none;
@@ -224,14 +230,14 @@ footer{
     }
     .menu_icon_area{
         position: absolute;
-        width: 150px;
-        height: 20px;
+        width: 100px;
+        height: 25px;
         margin-top: 15px;
-        right: 0;
+        right: 30px;
     }
     .menu_icon{
         position: absolute;
-        height: 20px;
+        height: 24px;
     }
     .box_search{
         display: none;
@@ -240,20 +246,27 @@ footer{
         display: block;
         position: absolute;
         right: 120px;
-        height: 18px;
+        height: 22px;
     }
     .icon_user{
         position: absolute;
-        right: 90px;
-        height: 18px;
+        right: 80px;
+        height: 22px;
     }
     .icon_shop{
         position: absolute;
-        right: 60px;
+        right: 40px;
     }
     /* cover area */
+    .cover_area{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/img_cover_1.jpg);
+        background-size: cover;
+    }
     .cover_word{
-        width: 270px;
+        width: 265px;
         height: 210px;
         margin-left: 20px;
         margin-top: 70px;
@@ -265,6 +278,18 @@ footer{
         height: 30px;
     }
     /* product area */
+    .trending{
+        height: 30px;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 25px;
+    }
+    .product_line{
+        width: 65px;
+        height: 3px;
+        margin-top: 6px;
+        margin-bottom: 30px;
+    }
     .container{
         padding-left: 5px;
         padding-right: 5px;
@@ -277,5 +302,28 @@ footer{
         width: 130px;
         font-size: 1.15rem;
         margin-bottom: 30px;
+    }
+    /* footer area */
+    .footer_row{
+        height: 80px;
+    }
+    .footer_icon{
+        position: absolute;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .footer_word{
+        position: absolute;
+        margin-top: 5px;
+    }
+    .footer_language{
+        display: none;
+    }
+    .icon{
+        width: 30px;
+        margin-right: 12px;
+    }
+    .language{
+        display: none;
     }
 }
