@@ -5,6 +5,12 @@ html{
     /* box-sizing: border-box; */
     /* max-width: 1280px; */
 }
+body{
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
 /* header */
 .header{
     width: 100%;
@@ -126,6 +132,9 @@ html{
     opacity: 0.5;
 }
 /* product area */
+.row{
+    text-align: center;
+}
 .trending{
     height: 70px;
     text-align: center;
@@ -142,18 +151,24 @@ html{
     margin: auto;
     margin-top: 15px;
     margin-bottom: 60px;
-    
 }
 .product{
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
     width: 295px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .name{
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
     width: 295px;
-    text-align: center;
     font-family: 'Dosis', sans-serif;
     font-size: 2.25rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 /* footer area */
 footer{
@@ -186,10 +201,10 @@ footer{
     margin-left: 15px;
 }
 /* iPad version RWD*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     html{
         font-size: 16px;
-        max-width: 768px;
+        max-width: 1024px;
     }
     /* header */
     .header{
@@ -303,10 +318,10 @@ footer{
     }
 }
 /* iPhone version RWD*/
-@media screen and (max-width: 320px){
+@media screen and (max-width: 480px){
     html{
         font-size: 12px;
-        max-width: 320px;
+        max-width: 480px;
     }
     /* header */
     .header{
