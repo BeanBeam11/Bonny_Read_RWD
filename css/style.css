@@ -256,6 +256,7 @@ footer{
         height: 35vh;
         background-image: url(../img/img_cover_1.jpg);
         background-size: contain;
+        background-position: center center;
         background-repeat: no-repeat;
     }
     .cover_word{
@@ -393,6 +394,7 @@ footer{
         height: 100vh;
         background-image: url(../img/img_cover_1.jpg);
         background-size: cover;
+        background-position: center center;
     }
     .cover_word{
         width: 265px;
