@@ -131,9 +131,6 @@ body{
     opacity: 0.5;
 }
 /* product area */
-body .container{
-    width: 320px;
-}
 .row{
     right: 0;
     left: 0;
@@ -416,6 +413,9 @@ footer{
         height: 30px;
     }
     /* product area */
+    body .container{
+        width: 320px;
+    }
     .col-sm-6.col-md-6.col-xl-4{
         width: 160px;
     }
