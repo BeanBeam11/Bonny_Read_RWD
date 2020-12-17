@@ -102,6 +102,7 @@ body{
     margin-top: 70px;
     font-family: 'Dosis', sans-serif;
     font-size: 1.5rem;
+    color: #292929;
 }
 .cover_header{
     font-size: 3rem;
@@ -130,7 +131,13 @@ body{
     opacity: 0.5;
 }
 /* product area */
+body .container{
+    width: 320px;
+}
 .row{
+    right: 0;
+    left: 0;
+    margin: auto;
     text-align: center;
 }
 .trending{
@@ -409,6 +416,12 @@ footer{
         height: 30px;
     }
     /* product area */
+    .col-sm-6.col-md-6.col-xl-4{
+        width: 160px;
+    }
+    .row{
+        width: 320px;
+    }
     .trending{
         height: 30px;
         text-align: center;
